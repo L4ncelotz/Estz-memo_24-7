@@ -1,6 +1,7 @@
 // bot/src/index.js (ปรับปรุงสำหรับ Prefix Commands)
 require('dotenv').config();
-
+const keepAlive = require('./server.js');
+keepAlive();
 const { Client, GatewayIntentBits, Collection } = require('discord.js');
 const { createClient } = require('@supabase/supabase-js');
 const fs = require('node:fs');
